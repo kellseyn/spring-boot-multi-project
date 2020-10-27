@@ -18,6 +18,6 @@ public interface UserCrudFeign {
     UserDetailsDTO callUserCrudToGetById(@PathVariable Long id);
 
     @GetMapping("/api/getByName/{name}")
-    List<UserDetailsDTO> callUserCrudToGetUsersByName(String name);
+    List<UserDetailsDTO> callUserCrudToGetUsersByName(@PathVariable String name);
 
 }
